@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("button").dblclick(function () {
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+      });
+    });
+  </script>
+  <style>
+    h1 {
+      color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee>
+    <p>
+    <h1>K.S.Ramani
+  </marquee>
+  </h1>
+  </p>
+
+
+  <button> Fade In </button><br><br>
+  <center>
+    <div id="div1" style="width:160px;height:160px;display:none;background-image:url('sahil.jfif');"></div><br>
+    <div id="div2" style="width:160px;height:160px;display:none;background-image: url('kaxil.jfif');"></div><br>
+    <div id="div3" style="width:160px;height:160px;display:none;background-image: url('rew.jpg');"></div>
+  </center>
+
+</body>
+
+</html>

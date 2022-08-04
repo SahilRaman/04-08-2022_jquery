@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
+});
+</script>
+<style>
+  .button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.div1{
+  height: 300px;
+  width: 300px;
+}
+</style>
+</head>
+
+<body>
+
+
+<center>
+<button class="button"> Fade Out </button><br><br>
+</center>
+<center>
+<div id="div1" style="width:75px;height:75px;background-color:rgb(196, 178, 80);"></div><br>
+<div id="div2" style="width:75px;height:75px;background-color:rgb(231, 124, 124);"></div><br>
+<div id="div3" style="width:75px;height:75px;background-color:rgb(214, 72, 115);"></div>
+</center>
+
+</body>
+</html>
